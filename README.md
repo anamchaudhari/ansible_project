@@ -54,7 +54,7 @@ If this runs successfully that mean all your configuration is done correctly
 To login into node every time it will ask for a password to avoid it create a public and private key
 go to vi /etc/ssh/sshd_config (note this is not on the ansible server but on the instance itself)
 Comment and Uncomment these parameters accordingly
-  # restarting sshd in the default instance launch configuration.
+  (# restarting sshd in the default instance launch configuration.)
   PasswordAuthentication yes
   #PermitEmptyPasswords no
 
