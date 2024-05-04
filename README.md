@@ -31,7 +31,7 @@ vi /etc/ansible/ansible_cfg
 Open sudoer file 
 visudo  
 make below changes
-  ## Allow root to run any commands anywhere 
+  (#Allow root to run any commands anywhere)
   root    ALL=(ALL)       ALL
   ansible ALL=(ALL) NOPASSWD: ALL (add the user which you have created here)
 
@@ -58,7 +58,7 @@ Comment and Uncomment these parameters accordingly
   PasswordAuthentication yes
   #PermitEmptyPasswords no
 
-  # Authentication:
+  (#Authentication:)
   #LoginGraceTime 2m
   PermitRootLogin yes
   #StrictModes yes
