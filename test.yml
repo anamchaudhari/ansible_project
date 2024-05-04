@@ -1,0 +1,17 @@
+---
+
+- hosts: grp
+  become: yes
+  user: ansible
+
+  tasks:
+     - name: Install Apache
+       yum: name=httpd state=present
+       notify: start apache
+
+  handlers:
+     - name: start apache 
+       service: name=httpd state=started
+
+
+...
